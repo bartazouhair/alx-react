@@ -1,5 +1,5 @@
 import React from "react";
-import { StyleSheet, css } from "aphrodite";
+import { StyleSheet, css } from 'aphrodite';
 import CourseListRow from "./CourseListRow";
 import PropTypes from "prop-types";
 import CourseShape from "./CourseShape";
