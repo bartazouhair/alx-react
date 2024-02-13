@@ -1,14 +1,22 @@
-import { getFullYear, getFooterCopy, getLatestNotification } from "./utils";
+import React from 'react';
+import Adapter from 'enzyme-adapter-react-16';
+import { getFullYear, getFooterCopy, getLatestNotification } from './utils';
 
-test("returns current year", () => {
-  expect(getFullYear()).toBe(2024);
-});
+test('Checking Year', () => {
+    expect(getFullYear()).toEqual(2024)
+})
 
-test("correct footer copy", () => {
-  expect(getFooterCopy(true)).toBe("Holberton School");
-  expect(getFooterCopy(false)).toBe("Holberton School main dashboard");
-});
+test('checking footerCopy when input true', () =>  {
+    expect(getFooterCopy(true)).toEqual("Holberton School")
 
-test("returns right notification", () => {
-  expect(getLatestNotification()).toBe("<strong>Urgent Requirement</strong> - complete by EOD");
-});
+})
+
+test('checking footerCopy when input false', () =>  {
+    expect(getFooterCopy(false)).toEqual("Holberton School main dashboard")
+
+})
+
+test('checking notificatiocatio', () =>  {
+    expect(getLatestNotification(false)).toEqual("<strong>Urgent requirement</strong> - complete by EOD")
+
+})
