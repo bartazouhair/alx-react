@@ -1,7 +1,7 @@
 import React from 'react';
 import { shallow } from 'enzyme';
 import BodySection from './BodySection';
-import { StyleSheetTestUtils } from 'aphrodite'
+import { StyleSheetTestUtils } from 'aphrodite';
 
 StyleSheetTestUtils.suppressStyleInjection();
 
@@ -11,7 +11,7 @@ describe('<BodySection />', () => {
         const wrapper = shallow(
             <BodySection title="test title">
                 <p>test children node</p>
-            
+            </BodySection>
         );
 
         expect(wrapper.find('h2')).toHaveLength(1);
