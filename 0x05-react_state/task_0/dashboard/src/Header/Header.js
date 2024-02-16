@@ -1,5 +1,5 @@
 import React from "react";
-import holberton_logo from "../assets/holberton_logo.jpg";
+import holberton_logo from "../assets/holberton-logo.jpg";
 import { StyleSheet, css } from "aphrodite";
 
 function Header() {
